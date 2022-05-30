@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('backend.pages.dashboard');
+    return view('backend.pages.home');
+});
+
+Route::get('/products', function () {
+    return view('backend.pages.products');
 });
